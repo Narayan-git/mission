@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Django Website</title>
+    
+    <link rel= "stylesheet" href = "">
+    <link rel= "stylesheet" href = "{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <style>
+        /* body {
+            background-color: lightblue;
+            text-align: center;
+        } */
+    </style>
+    
+</head>
+<body class="bg-primary">
+    <div class="container  p-5 mb-2 text-center">
+        <h1>Welcome to Django project</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Obcaecati praesentium voluptatem quibusdam error, cumque,
+            cupiditate architecto doloremque suscipit repudiandae blanditiis asperiores,
+            aliquam optio consequatur! Aspernatur et excepturi dicta rerum mollitia.</p>
+        <br>
+        <br>
+        <br>
+        <H1 class="bg-warning">Hello {{Name}} {{msg}}</H1>
+        <h2>The Current Time is {{time}}</h2>
+
+    </div>
+    
+
+</body>
+</html>
